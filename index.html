@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b0c0e" />
+    <meta
+      name="description"
+      content="AMB Studio, estúdio de experiências imersivas em Goiânia: realidade virtual, realidade aumentada e captação 360° em 8K para meio ambiente, saneamento, agro, indústria e educação."
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./media/marca/amb-icon-32.png" />
+    <link rel="apple-touch-icon" href="./media/marca/amb-icon-180.png" />
+    <!-- SPA: nada pinta antes do JS; só a fonte do título gigante é pré-carregada, com prioridade baixa (não disputa banda
+         com o JS no celular lento). O Vite reescreve o href para o arquivo com hash do build (o mesmo do CSS). -->
+    <link rel="preload" as="font" type="font/woff2" crossorigin fetchpriority="low" href="./assets/archivo-latin-wdth-normal-DY7AcnAa.woff2" />
+    <!-- Pôster do óculos no hero (maior elemento da primeira tela): baixa junto com o JS, não depois do render. As media
+         queries são as de HERO_MQ (src/three/heroFrame.ts) — celular/tablet em pé × o resto —, sem movimento reduzido
+         (o modo estático usa outro arquivo). Os nomes vêm de scripts/poster.mjs. -->
+    <link rel="preload" as="image" fetchpriority="high" href="./media/3d/headset-poster-m.webp" media="(prefers-reduced-motion: no-preference) and (max-width: 760px) and (min-height: 521px), (prefers-reduced-motion: no-preference) and (orientation: portrait) and (max-width: 1100px)" />
+    <link rel="preload" as="image" fetchpriority="high" href="./media/3d/headset-poster.webp" media="(prefers-reduced-motion: no-preference) and (min-width: 761px) and (orientation: landscape), (prefers-reduced-motion: no-preference) and (max-height: 520px) and (orientation: landscape), (prefers-reduced-motion: no-preference) and (min-width: 1101px)" />
+    <link rel="preload" as="image" fetchpriority="high" href="./media/3d/headset-card.webp" media="(prefers-reduced-motion: reduce)" />
+    <title>AMB Studio · Estúdio de experiências imersivas</title>
+    <meta property="og:title" content="AMB Studio · Estúdio de experiências imersivas" />
+    <meta property="og:description" content="Realidade virtual, realidade aumentada e captação 360° em 8K. Cases Saneago, SEMAD e Agro." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:image" content="./media/marca/og-amb-studio.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <script>
+      document.documentElement.classList.remove('no-js')
+    </script>
+    <script type="module" crossorigin src="./assets/index-DF16R_Lp.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BcBP08Eo.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <div style="padding: 24px; font-family: system-ui, sans-serif; color: #f0ece4; background: #0b0c0e">
+        <h1>AMB Studio · Estúdio de experiências imersivas</h1>
+        <p>
+          Realidade virtual, realidade aumentada e captação 360° em 8K, de Goiânia para todo o Brasil. Ative o JavaScript
+          para ver os cases e falar com o estúdio pelo WhatsApp: +55 (62) 99304-6413.
+        </p>
+      </div>
+    </noscript>
+  </body>
+</html>
